@@ -1,0 +1,116 @@
+.bg-blue-gradient {
+    background: linear-gradient(150deg, #0047AB 10%, #338AFF 90%);
+    color: #fff;
+}
+
+
+body {
+    margin: 0;
+    background: #004080;
+    font-family: Roboto, sans-serif
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.colore-rcv{
+    color: #006BD9;
+}
+
+.wrapper {
+    min-height: 90vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0f0f0f;
+}
+
+@keyframes growBackground {
+    0% {
+        transform: translate(-50%, -50%) scale(0.3);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+.bg-image {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.animated-grow-first {
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0.5;
+    animation: growBackground 0.5s ease-out forwards;
+}
+
+.animated-grow-second {
+    position: absolute;
+    top: 50% !important;
+    left: 54% !important;
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0.5;
+    animation: growBackground 0.5s ease-out forwards;
+}
+
+.image{
+    padding: 30px 10px 0 10px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@keyframes moverIzqDer {
+    0% {
+        transform: translateX(-7px);
+    }
+    50% {
+        transform: translateX(7px);
+    }
+    100% {
+        transform: translateX(-7px);
+    }
+}
+
+.bg-image h3 {
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+    animation: moverIzqDer 1s infinite ease-in-out;
+}
+
+.text-content{
+    text-align: left;
+}
+
+.padding-content{
+    padding: 20px;
+}
+
+@media (max-width: 992px) {
+    .text-content{
+        text-align: center;
+    }
+
+    .padding-content{
+        padding: 20px 20px 0 20px;
+    }
+
+    .width-content{
+        width: 90vw;
+    }
+}

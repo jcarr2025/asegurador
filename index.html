@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <title>RCV PLUS QR Verification</title>
+</head>
+<body>
+<div class="wrapper bg-blue-gradient container">
+    <div class="bg-image animated-grow-first width-content" id="first-div">
+        <img src="public/assets/image-load.png" class="image img-responsive" alt="Imagen de Fondo">
+        <h3 style="color: black; text-align: center; font-weight: normal">Verificando...</h3>
+    </div>
+
+    <div style="background: white; max-width: 500px; border-radius: 15px" class="row text-center animated-grow-second hidden width-content" id="second-div">
+        <div class="col-md-12" style="margin-bottom: 20px">
+            <img src="public/assets/image-load.png" class="image img-responsive" alt="Imagen de Fondo" style="padding-top: 5px">
+            <h3 class="colore-rcv" style="font-weight: bold">Verificado ✓</h3>
+        </div>
+
+        <div class="col-md-12 text-content">
+            <div class="col-md-6" style="padding-right: 0">
+                <p>Contrato: <b class="colore-rcv">PA-2320</b></p>
+                <p>Cliente: <b class="colore-rcv">Carlos alberto Serrano Villarreal</b></p>
+                <p>R.I.F.: <b class="colore-rcv">V18880253</b></p>
+                <p>Plan: <b class="colore-rcv">Basico</b></p>
+                <p>Fecha de inicio: <b class="colore-rcv">16/12/2024</b></p>
+
+            </div>
+            <div class="col-md-6">
+                <p>Marca: <b class="colore-rcv">Hyundai</b></p>
+                <p>Modelo: : <b class="colore-rcv">Getz / GLS 1.6L M/T</b></p>
+                <p>Fecha de expiracion: <b class="colore-rcv">16/12/2025</b></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let firstDiv = document.getElementById("first-div");
+        let secondDiv = document.getElementById("second-div");
+
+        setTimeout(() => {
+            firstDiv.style.display = "none";
+            secondDiv.classList.remove("hidden");
+        }, 4000);
+    });
+</script>
+</body>
+</html>
